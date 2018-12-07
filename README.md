@@ -1,7 +1,7 @@
 baobei-job ![alt tag](https://api.travis-ci.org/phishman3579/java-algorithms-implementation.svg?branch=master)
 ==============================
 
-xxl-job revision. 基于[xxl-job](https://github.com/xuxueli/xxl-job)修改版，选用的执行器版本为Spring Boot(引入了多数据源配置，Swagger2，MyBatis Generator代码生成器).
+xxl-job revision. 基于[xxl-job](https://github.com/xuxueli/xxl-job)修改版，选用的执行器版本为Spring Boot(引入了多数据源配置，Swagger2，MyBatis Generator代码自动生成器，根据数据库表名生成对应的Domain、Mapper、Service、ServiceImpl、Controller、JobHandler、DTO、XML，简化开发).
 
 ## Table of Contents
 + [Environment](https://github.com/loveisontheway/baobei-job#Environment)
