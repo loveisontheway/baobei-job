@@ -1,0 +1,30 @@
+# env
+spring:
+  profiles:
+    active: dev
+
+# log config
+logging:
+  config: classpath:logback.xml
+
+# MyBatis
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+
+# xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
+xxl:
+  job:
+    admin:
+      addresses: http://127.0.0.1:8080/baobei-job-admin
+    ### xxl-job executor address
+    executor:
+      appname: baobei-job-executor
+      ip:
+      port: 9999
+      ### xxl-job log path
+      logpath: /Users/loveisontheway/logs/xxl-job/jobhandler
+      ### xxl-job log retention days
+      logretentiondays: -1
+    ### xxl-job, access token
+    accessToken:
+
