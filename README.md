@@ -13,6 +13,7 @@ xxl-job revision. 基于[xxl-job](https://github.com/xuxueli/xxl-job)修改版�
 ## Environment
 + `JDK:` 1.8+
 + `Tomcat:` 8.5.x
++ `XXL-JOB:` 2.0.2-SNAPSHOT
 + `Spring Boot:` 1.5.17
 + `MySQL:` 5.6+
 + `Swagger2:` 2.9.2
@@ -39,21 +40,21 @@ xxl-job revision. 基于[xxl-job](https://github.com/xuxueli/xxl-job)修改版�
 
 ```java
 public static void main(String[] args) {
-        /**
-         * 单表名
-         * 元素1: 表名 [不可为空，与MySQL表名保持一致]
-         * 元素2: 自定义名称 [""或null 表示直接引用'元素1']
-         * 元素3: 类注释描述 [""或null 表示无注释]
-         * 元素4: 主键数据类型 [不可为空，默认Integer]
-         */
-        String[][] arrNames = {{"func", "", "函数", "String"}};
-        // 多表名
-/*        String[][] arrNames = {
-                {"help_topic", "", "主题", "Integer"},
-                {"func", "", "函数", "String"},
-                {"plugin", "", "插件", "String"},
-                {"tables_priv", "", "表", "String"}
-        };*/
-        genCode(arrNames);
-    }
+    /**
+     * 单表名
+     * 元素1: 表名 [不可为空，与MySQL表名保持一致]
+     * 元素2: 自定义名称 [""或null 表示直接引用'元素1']
+     * 元素3: 类注释描述 [""或null 表示无注释]
+     * 元素4: 主键数据类型 [不可为空，默认Integer]
+     */
+    String[][] arrNames = {{"func", "", "函数", "String"}};
+    // 多表名
+/*    String[][] arrNames = {
+        {"help_topic", "", "主题", "Integer"},
+        {"func", "", "函数", "String"},
+        {"plugin", "", "插件", "String"},
+        {"tables_priv", "", "表", "String"}
+    };*/
+    genCode(arrNames);
+}
 ```
